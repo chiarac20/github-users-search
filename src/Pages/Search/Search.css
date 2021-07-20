@@ -1,0 +1,25 @@
+.search-page{
+    width: 80vw;
+    margin: auto;
+}
+
+.user-section{
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+}
+
+.user-input {
+    width: 100%;
+}
+
+.user-section:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+.avatar {
+    max-width: 5vw;
+    max-height: 5vw;
+    padding: 1vw;
+}
