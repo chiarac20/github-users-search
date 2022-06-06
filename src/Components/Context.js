@@ -1,14 +1,16 @@
-import { createContext, useEffect } from 'react';
+import { createContext, useState } from 'react';
 
 export const Context=createContext();
 
 export function ContextWrapper({children}) {
-    function addToTable(user) {
-        console.log(user)
-    }
+    const [usersList, setUsersList]=useState([]);
+
 
     const contextValue={
-        
+        usersList: {
+            value: usersList,
+            set: setUsersList
+        }
     };
 
     return <Context.Provider value={contextValue}>
